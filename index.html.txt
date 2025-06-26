@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alma en Armonía - Terapias Holísticas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="fullpage-container">
+
+        <section id="portada">
+            <video src="video-portada.mp4" autoplay loop muted playsinline class="background-video"></video>
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Alma en Armonía</h1>
+                <h2>Mariana | Master en Terapias Holísticas</h2>
+                <div class="scroll-indicator">
+                    <span>Desliza para explorar</span>
+                    <div class="arrow">↓</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="limpieza">
+            <video src="video-limpieza.mp4" autoplay loop muted playsinline class="background-video"></video>
+            <div class="overlay"></div>
+            <div class="content">
+                <h2>Terapia de Limpieza Energética</h2>
+                <p class="intro">Nuestro campo energético, al igual que nuestro cuerpo físico, necesita cuidados y atención. La Terapia de Limpieza Energética es un camino de purificación y renovación para restaurar tu equilibrio.</p>
+                <div class="details">
+                    <div class="detail-item">
+                        <h3>Eliminación de Energías Negativas</h3>
+                        <p>Liberamos tu campo áurico de cualquier vibración discordante, proporcionándote una sensación inmediata de ligereza y paz.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Desbloqueos Personales</h3>
+                        <p>Identificamos y disolvemos bloqueos emocionales, mentales y espirituales que obstaculizan tu crecimiento y metas.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Armonización de Chacras</h3>
+                        <p>Alineamos tus centros energéticos para que la fuerza vital fluya libremente, mejorando tu salud integral.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Apertura de Caminos</h3>
+                        <p>Preparamos el terreno para que nuevas oportunidades lleguen a tu vida, permitiéndote avanzar con claridad y confianza.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reiki">
+            <video src="video-reiki.mp4" autoplay loop muted playsinline class="background-video"></video>
+            <div class="overlay"></div>
+            <div class="content">
+                <h2>Reiki: Sanación Universal a tu Alcance</h2>
+                <p class="intro">El Reiki es una terapia milenaria que canaliza la Energía Vital Universal. Es una experiencia profundamente relajante que promueve la sanación en todos los niveles.</p>
+                 <div class="details">
+                    <div class="detail-item">
+                        <h3>Testeo de los chakras</h3>
+                        <p>Realizamos una evaluación energética para identificar qué chakras se encuentran bloqueados o en desequilibrio.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Alineación y Armonización</h3>
+                        <p>Trabajaremos sobre cada uno de tus centros energéticos para restaurar su vibración y flujo óptimo.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Envío de Reiki</h3>
+                        <p>Recibirás la Energía Vital Universal para liberar estrés, reducir ansiedad y promover un bienestar general.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="velas">
+            <video src="video-velas.mp4" autoplay loop muted playsinline class="background-video"></video>
+            <div class="overlay"></div>
+            <div class="content">
+                <h2>Rituales con Velas: Ilumina tus Intenciones</h2>
+                <p class="intro">Utilizamos la magia de la luz y el color para enfocar tu intención y atraer aquello que deseas a tu vida.</p>
+                 <div class="details">
+                    <div class="detail-item">
+                        <h3>Amor Propio</h3>
+                        <p>Un ritual para fortalecer tu autoestima, sanar heridas del corazón y reconectar con tu valor intrínseco.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Endulzamiento</h3>
+                        <p>Armoniza y suaviza relaciones, calma conflictos y fomenta la comprensión y la dulzura.</p>
+                    </div>
+                     <div class="detail-item">
+                        <h3>Aperturas de Caminos</h3>
+                        <p>Despeja los obstáculos que te impiden avanzar en cualquier área de tu vida, atrayendo claridad.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Estudio y Abundancia</h3>
+                        <p>Potencia tu concentración y atrae la prosperidad, eliminando bloqueos financieros.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tarot">
+            <video src="video-tarot.mp4" autoplay loop muted playsinline class="background-video"></video>
+            <div class="overlay"></div>
+            <div class="content">
+                <h2>Tarot: Una Guía para tu Alma</h2>
+                <p class="intro">El Tarot es un lenguaje simbólico que nos conecta con nuestra sabiduría interior para entender, sanar y construir el futuro que deseamos.</p>
+                 <div class="details">
+                    <div class="detail-item">
+                        <h3>Lecturas Generales</h3>
+                        <p>Una visión amplia de tu situación actual y las energías que te rodean para ofrecerte un panorama claro.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Consultas Específicas</h3>
+                        <p>Nos enfocamos en tu inquietud para recibir mensajes claros y consejos prácticos que te ayuden a resolver dudas.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Consejos de los Oráculos</h3>
+                        <p>Consultamos otros mazos para obtener perspectivas diferentes y mensajes complementarios. (Puedes elegir entre diversos oráculos).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="overlay-solid"></div>
+            <div class="content">
+                <h2>Inicia tu Camino de Sanación</h2>
+                <p class="intro">Estoy aquí para guiarte. Si sentiste el llamado, no dudes en contactarme.</p>
+                <a href="https://wa.me/541140975968" class="cta-button" target="_blank">Agendar Cita por WhatsApp</a>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/almaenarmonia2/" target="_blank">Sigueme en Instagram</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
