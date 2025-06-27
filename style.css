@@ -10,36 +10,37 @@ body, html {
 
 /* --- CONTENEDOR PRINCIPAL Y EFECTO SCROLL-SNAP --- */
 .fullpage-container {
-    /* El cerebro de la operación: habilita el scroll-snap vertical */
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh; /* Ocupa toda la altura de la ventana */
+    height: 100vh;
 }
 
 /* --- ESTILO PARA CADA DIAPOSITIVA (SECTION) --- */
 section {
     height: 100vh;
     width: 100vw;
-    /* Cada sección se alineará con el inicio del viewport al hacer snap */
     scroll-snap-align: start;
-    position: relative;
+    position: relative; /* Clave para el orden de las capas */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 2rem;
     box-sizing: border-box;
+    overflow: hidden; /* Evita que los elementos se desborden */
 }
 
-/* --- FONDOS DE VIDEO Y SUPERPOSICIÓN --- */
+/* --- FONDOS DE VIDEO Y SUPERPOSICIÓN (VERSIÓN CORREGIDA) --- */
 .background-video {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cubre todo el espacio sin deformarse */
-    z-index: -2; /* Detrás de todo */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el video perfectamente */
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1; /* Capa 1: El video */
 }
 
 .overlay {
@@ -48,14 +49,15 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.55); /* Capa oscura para legibilidad */
-    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 2; /* Capa 2: La capa oscura */
 }
 
-/* --- ESTILOS DEL CONTENIDO DE LAS DIAPOSITIVAS --- */
+/* --- ESTILOS DEL CONTENIDO (VERSIÓN CORREGIDA) --- */
 .content {
     max-width: 900px;
-    z-index: 1;
+    position: relative; /* Necesario para que el z-index funcione */
+    z-index: 3; /* Capa 3: El contenido, por encima de todo */
 }
 
 .content h1 {
@@ -95,7 +97,7 @@ section {
     padding: 1.5rem;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    flex-basis: 45%; /* Cada item ocupa aprox 45% del ancho */
+    flex-basis: 45%;
     box-sizing: border-box;
 }
 
@@ -117,7 +119,7 @@ section {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
     background: linear-gradient(45deg, #2c3e50, #34495e);
-    z-index: -1;
+    z-index: 1; /* Mismo z-index que los videos */
 }
 
 .cta-button {
@@ -154,6 +156,7 @@ section {
     transform: translateX(-50%);
     text-align: center;
     animation: bounce 2s infinite;
+    z-index: 4; /* Aseguramos que se vea */
 }
 .scroll-indicator span {
     font-size: 0.9rem;
