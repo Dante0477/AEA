@@ -5,7 +5,7 @@ body, html {
     font-family: 'Poppins', sans-serif;
     background-color: #1a1a1a;
     color: #f0f0f0;
-    overflow: hidden; /* Ocultamos el scrollbar del body */
+    overflow: hidden;
 }
 
 /* --- CONTENEDOR PRINCIPAL Y EFECTO SCROLL-SNAP --- */
@@ -20,7 +20,7 @@ section {
     height: 100vh;
     width: 100vw;
     scroll-snap-align: start;
-    position: relative; /* Clave para el orden de las capas */
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,17 +29,17 @@ section {
     box-sizing: border-box;
 }
 
-/* --- FONDOS DE VIDEO Y SUPERPOSICIÓN (VERSIÓN CORREGIDA) --- */
-.background-video {
+/* --- FONDOS (GIFS) Y SUPERPOSICIÓN --- */
+.background-media {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centra el video perfectamente */
+    transform: translate(-50%, -50%);
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: 1; /* Capa 1: El video */
+    z-index: 1;
 }
 
 .overlay {
@@ -49,14 +49,14 @@ section {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.55);
-    z-index: 2; /* Capa 2: La capa oscura */
+    z-index: 2;
 }
 
-/* --- ESTILOS DEL CONTENIDO (VERSIÓN CORREGIDA) --- */
+/* --- ESTILOS DEL CONTENIDO --- */
 .content {
     max-width: 900px;
-    position: relative; /* Necesario para que el z-index funcione */
-    z-index: 3; /* Capa 3: El contenido, por encima de todo */
+    position: relative;
+    z-index: 3;
 }
 
 .content h1 {
@@ -118,7 +118,7 @@ section {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
     background: linear-gradient(45deg, #2c3e50, #34495e);
-    z-index: 1; /* Mismo z-index que los videos */
+    z-index: 1;
 }
 
 .cta-button {
@@ -155,7 +155,7 @@ section {
     transform: translateX(-50%);
     text-align: center;
     animation: bounce 2s infinite;
-    z-index: 4; /* Aseguramos que se vea */
+    z-index: 4;
 }
 .scroll-indicator span {
     font-size: 0.9rem;
