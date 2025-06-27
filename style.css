@@ -27,7 +27,6 @@ section {
     text-align: center;
     padding: 2rem;
     box-sizing: border-box;
-    overflow: hidden; /* Evita que los elementos se desborden */
 }
 
 /* --- FONDOS DE VIDEO Y SUPERPOSICIÓN (VERSIÓN CORREGIDA) --- */
